@@ -1,0 +1,3 @@
+ul
+  for entry in env.helpers.contents.list(contents).sort(function(a, b) { return a.filename.localeCompare(b.filename); })
+    li=entry.filename

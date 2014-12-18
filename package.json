@@ -1,0 +1,56 @@
+{
+  "name": "wintersmith-contents",
+  "description": "A Wintersmith plugin to manipulate contents",
+  "version": "0.0.0",
+  "homepage": "https://github.com/xavierdutreilh/wintersmith-contents",
+  "author": {
+    "name": "Xavier Dutreilh",
+    "email": "xavier@dutreilh.com",
+    "url": "http://xavier.dutreilh.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xavierdutreilh/wintersmith-contents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xavierdutreilh/wintersmith-contents/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/xavierdutreilh/wintersmith-contents/blob/master/LICENSE.txt"
+    }
+  ],
+  "main": "lib/",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "prepublish": "coffee -o ./lib -b -c ./src"
+  },
+  "dependencies": {
+    "minimatch": "^2.0.1"
+  },
+  "devDependencies": {
+    "coffee-script": ">1.5",
+    "grunt": "~0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-bump": "gruntjs/grunt-contrib-bump",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-jscs": "^1.0.0",
+    "grunt-wintersmith-run": "^0.1.2",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "wintersmith": "2.x"
+  },
+  "peerDependencies": {
+    "wintersmith": "2.x"
+  },
+  "keywords": [
+    "wintersmith",
+    "wintersmith-plugin"
+  ]
+}
