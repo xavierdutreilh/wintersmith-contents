@@ -10,7 +10,7 @@ module.exports = (env, callback) ->
     directories = contents._.directories.map (directory) -> list directory
     entries = [].concat.apply contents._.files, directories
     entries.push contents.index if contents.index?
-    entries
+    entries.sort (a, b) -> a.filename.localeCompare b.filename
 
   env.helpers.contents =
     filter: filter
