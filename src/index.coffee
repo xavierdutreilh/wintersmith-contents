@@ -4,7 +4,7 @@ module.exports = (env, callback) ->
 
   filter = (contents, pattern) ->
     list(contents).filter (entry) ->
-        if pattern? then minimatch(entry.filename, pattern) else true
+      minimatch(entry.filename, pattern)
 
   list = (contents) ->
     entries = []
