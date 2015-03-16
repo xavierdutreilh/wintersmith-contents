@@ -12,7 +12,7 @@ module.exports = (env, callback) ->
       switch key
         when 'directories'
           subcontents = value.map (directory) -> list directory
-          entries = [].concat.apply entries, subcontents
+          entries = Array.prototype.concat.apply entries, subcontents
         else
           entries = entries.concat value
     entries.sort (a, b) -> a.filename.localeCompare b.filename
