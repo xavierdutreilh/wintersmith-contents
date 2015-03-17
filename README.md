@@ -25,19 +25,19 @@ and add `wintersmith-contents` to your config.json
 List all entries
 
 ```javascript
-env.helpers.contents.list(contents)
+env.helpers.contents.list(contents);
 ```
 
 List all entries from a given subtree
 
 ```javascript
-env.helpers.contents.list(contents.articles)
+env.helpers.contents.list(contents.articles);
 ```
 
 List all text files
 
 ```javascript
-env.helpers.contents.filter(contents, '**/*.txt')
+env.helpers.contents.filter(contents, '**/*.txt');
 ```
 
 Please note that `wintersmith-contents` relies on `minimatch` to match filenames with specified patterns. So, any pattern supported by `minimatch` is also supported by `wintersmith-contents`.
