@@ -1,4 +1,4 @@
-# wintersmith-contents [![Build Status](https://travis-ci.org/xavierdutreilh/wintersmith-contents.svg)](https://travis-ci.org/xavierdutreilh/wintersmith-contents)
+# wintersmith-contents [![Build Status](https://travis-ci.org/xavierdutreilh/wintersmith-contents.svg?branch=master)](https://travis-ci.org/xavierdutreilh/wintersmith-contents)
 
 A [Wintersmith](https://github.com/jnordberg/wintersmith) plugin to manipulate contents
 
