@@ -3,7 +3,7 @@
 var grunt = require('grunt');
 
 exports.contents = {
-  filter: function(test) {
+  'filter': function(test) {
     var actual = grunt.file.read('tmp/build/helpers/filter.html');
     var expected = grunt.file.read('test/expected/helpers/filter.html');
 
@@ -11,7 +11,7 @@ exports.contents = {
 
     test.done();
   },
-  list: function(test) {
+  'list': function(test) {
     var actual = grunt.file.read('tmp/build/helpers/list.html');
     var expected = grunt.file.read('test/expected/helpers/list.html');
 
