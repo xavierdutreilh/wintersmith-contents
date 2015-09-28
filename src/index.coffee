@@ -18,7 +18,7 @@ module.exports = (env, callback) ->
     entries.sort (a, b) -> a.filename.localeCompare b.filename
 
   env.helpers.contents =
-    filter: filter
-    list: list
+    'filter': filter
+    'list': list
 
   callback()
