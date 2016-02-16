@@ -1,7 +1,7 @@
 {
   "name": "wintersmith-contents",
   "description": "A Wintersmith plugin to manipulate contents",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "homepage": "https://github.com/xavierdutreilh/wintersmith-contents",
   "author": {
     "name": "Xavier Dutreilh",
