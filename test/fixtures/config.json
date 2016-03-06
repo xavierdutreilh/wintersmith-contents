@@ -6,6 +6,6 @@
   },
   "output": "../../tmp",
   "plugins": [
-    "../../index-dev.js"
+    "../../lib/index.js"
   ]
 }
