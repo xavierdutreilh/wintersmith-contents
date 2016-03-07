@@ -37,6 +37,10 @@
     "wintersmith": "2.x"
   },
   "keywords": [
+    "content",
+    "filter",
+    "list",
+    "minimatch",
     "wintersmith",
     "wintersmith-plugin"
   ]
