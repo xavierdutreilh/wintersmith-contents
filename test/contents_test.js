@@ -1,23 +1,24 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 
 function read(filename) {
-  return fs.readFileSync(filename, {'encoding': 'utf8'});
+  return fs.readFileSync(filename, 'utf8');
 }
 
 exports.contents = {
   'filter': (test) => {
-    const actual = read('tmp/helpers/filter.html');
-    const expected = read('test/expected/helpers/filter.html');
+    const actual = read(path.join(__dirname, '..', 'tmp', 'filter.html'));
+    const expected = read(path.join(__dirname, 'expected', 'filter.html'));
 
     test.equal(actual, expected, 'should filter all entries');
 
     test.done();
   },
   'list': (test) => {
-    const actual = read('tmp/helpers/list.html');
-    const expected = read('test/expected/helpers/list.html');
+    const actual = read(path.join(__dirname, '..', 'tmp', 'list.html'));
+    const expected = read(path.join(__dirname, 'expected', 'list.html'));
 
     test.equal(actual, expected, 'should list all entries');
 
