@@ -5,7 +5,7 @@ function read (filename) {
 }
 
 exports.contents = {
-  filter(test) {
+  filter (test) {
     const actual = read(`${__dirname}/../tmp/filter.html`)
     const expected = read(`${__dirname}/expected/filter.html`)
 
@@ -13,7 +13,7 @@ exports.contents = {
 
     test.done()
   },
-  list(test) {
+  list (test) {
     const actual = read(`${__dirname}/../tmp/list.html`)
     const expected = read(`${__dirname}/expected/list.html`)
 
