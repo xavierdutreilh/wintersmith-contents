@@ -29,7 +29,7 @@
     "wintersmith": "^2.4.1"
   },
   "devDependencies": {
-    "nodeunit": "^0.11.1",
+    "nodeunit": "^0.11.2",
     "standard": "^10.0.3"
   },
   "keywords": [
